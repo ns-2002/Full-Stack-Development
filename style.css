@@ -1,0 +1,62 @@
+h1{
+    color: red;;
+}
+#g{
+    color: rgb(58, 32, 81);
+}
+
+/* -----------------grouping----------------- */
+
+h2,h3,h4,h5,h6,div,p{
+    color:rgba(72, 20, 72, 0.915);
+}
+
+ /* ------Using the Universal Selector----- */
+
+ *{
+    color : brown;
+    background-color: beige ;
+    
+} 
+
+/* ---------------Child Selector---------- */
+
+/*
+ if we use sapce : div h1 , now it will consider sapn as well that is called desendent selector...*/
+p > h1{   
+    color: brown;
+    border: 7px solid green;
+} 
+
+span > h1{   
+    color: brown;
+    border: 7px solid green;
+}
+
+i > h1{   
+    color: brown;
+    border: 7px solid green;
+} 
+
+/* -------------------Desendent Selector ------------------------------- */
+
+div h1{   
+    color: brown;
+    border: 7px solid green;
+}
+
+/* --------------immediate Sibling Selector--------------------- */
+
+div +h1{     
+    color: brown;
+    border: 7px solid green;
+} 
+
+/* this will select only one element who is immediate the parent child relation */
+
+div ~h1{   
+    color: brown;
+    border: 7px solid green;
+}
+
+/* this will select all the element who is immediate the parent child relation */

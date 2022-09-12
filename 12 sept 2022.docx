@@ -1,0 +1,66 @@
+CSS :-
+
+    Why css?
+    - Formatting
+    - Write once and use on different html document
+    - Link element :-
+    <link rel="stylesheet" href="a.css">
+    - Loading of html document is faster.
+    - No html
+
+    - Types of css :-
+    a. inline
+    b. internal
+    c. external
+    
+    Selector :-
+
+     h1{
+        color : red;
+    }
+    Decleration : - the content given inside the cruly braces
+    Property name(color): Property Value(red)
+
+    Categories of Selectors :-
+    I - General Selector
+    a. using the tag name
+    - if you want to give effect to the element then use 
+
+    b. using the id name
+    c. using the class
+    d. Using grouping elements : if you want to give the same effect to the group of elements,Elements name seprated by comma.
+    e. Using the Universal Selector:-
+    -if you want to give effects to all the elements inthe html document then use the universal Selector
+    - use * symbol to denote Universal Selector
+
+    II - Relationship with the elements (Combinators)
+    - if there is relationship b/w the elements then we use combinators concept
+     Catogires :-
+      1.) child relationship (chid selector) :-
+      - if there is a relationship of child(second element)
+      with first element then use child relation concept
+      - div element is supported
+      - p is not supported for child relation
+           Syntex : 
+      div > h1{   
+    color: brown;
+    border: 7px solid green;
+}
+
+      Block Elements :-
+      
+      Inline Elements :-
+
+
+      2.) Desendent Selector : it will select all the childs inside the given tag but leave the elements outside the tag
+           Syntex : 
+      div h1{   
+    color: brown;
+    border: 7px solid green;
+}
+      3.) immediate Sibling Selector ; if you want ALL ELEMENTS immediate after parent child relation 
+      Syntex : 
+      div + h1{   
+    color: brown;
+    border: 7px solid green;
+}
